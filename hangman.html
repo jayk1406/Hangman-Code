@@ -1,0 +1,779 @@
+ <html>
+        <head>
+            <style>
+                #boxhead{
+                    position:absolute;
+                    width:100px;
+                    height:100px;
+                    left:300px;
+                    top:170px;
+                }
+                
+                #boxbody{
+                    position:absolute;
+                    width:20px;
+                    height:200px;
+                    left:350px;
+                    top:270px;
+                    
+                }
+                
+                #boxarm1{
+                    position:absolute;
+                    width:40px;
+                    height:150px;
+                    left:310px;
+                    top:300px;
+                    }
+
+                #boxarm2{
+                    position:absolute;
+                    width:40px;
+                    height:150px;
+                    left:355px;
+                    top:300px;
+                    }
+
+                #boxleg1{
+                    position:absolute;
+                    width:40px;
+                    height:150px;
+                    left:310px;
+                    top:450px;
+                    }
+
+                #boxleg2{
+                    position:absolute;
+                    width:40px;
+                    height:150px;
+                    left:355px;
+                    top:450px;
+                    }
+
+                #letter1{
+                    position:absolute;
+                    left:250px;
+                    top:650px;
+                }
+
+                #letter2{
+                    position:absolute;
+                    left:295px;
+                    top:650px;
+                }
+
+                #letter3{
+                    position:absolute;
+                    left:340px;
+                    top:650px;
+                }
+
+                #letter4{
+                    position:absolute;
+                    left:385px;
+                    top:650px;
+                }
+
+                #letter5{
+                    position:absolute;
+                    left:430px;
+                    top:650px;
+                }
+
+                #alphabet{
+                    position: absolute;
+                    
+                    width:400px;
+                    height:50px;
+
+                    left:50px;
+                    top:700px;
+                }
+
+                button{width:25px}
+                
+                .hidden{display:none;}
+    
+            </style>
+                
+            <script>
+                var count = 0;
+                var correct= 0;
+
+                function test(){
+                    count = count + 1;
+                    
+                    var placeholder = document.getElementById("counter");
+                    placeholder.innerHTML = count;
+                }
+
+                
+                function clickA(){
+                    document.getElementById("letter2").innerHTML = "A";
+                    correct = correct + 1;
+                    if (correct == 4){
+                        alert("Congratulations! You've guessed the word!")
+                    }
+                }
+
+                function clickB(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickC(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickD(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickE(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickF(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickG(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickH(){
+                    document.getElementById("letter1").innerHTML = "H";
+                    correct = correct + 1;
+                    if (correct == 4){
+                        alert("Congratulations! You've guessed the word!")
+                    }
+                }
+                
+                function clickI(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickJ(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickK(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickL(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickM(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickN(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickO(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+                
+                function clickP(){
+                    document.getElementById("letter3").innerHTML = "P";
+                    document.getElementById("letter4").innerHTML = "P";
+                    correct = correct + 1;
+                    if (correct == 4){
+                        alert("Congratulations! You've guessed the word!")
+                    }
+                }
+
+                function clickQ(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickR(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickS(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickT(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickU(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickV(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+                
+                function clickW(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickX(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+                function clickY(){
+                    document.getElementById("letter5").innerHTML = "Y";
+                    correct = correct + 1;
+                    if (correct == 4){
+                        alert("Congratulations! You've guessed the word!")
+                    }
+                }
+
+                function clickZ(){
+                    if (count == 0){
+                        document.getElementById("boxhead").classList.remove('hidden');
+                    }
+                    else if (count == 1){
+                        document.getElementById("boxbody").classList.remove('hidden');
+                    }
+                    else if (count == 2){
+                        document.getElementById("boxarm1").classList.remove('hidden');
+                    }
+                    else if (count == 3){
+                        document.getElementById("boxarm2").classList.remove('hidden');
+                    }
+                    else if (count == 4){
+                        document.getElementById("boxleg1").classList.remove('hidden');
+                    }
+                    else if (count == 5){
+                        document.getElementById("boxleg2").classList.remove('hidden');
+                    }
+
+                    count = count + 1;
+                    if (count == 6){
+                        alert("Game Over! Try again!");}
+                }
+
+               
+            
+            </script>
+        </head>
+        
+        
+        <body>
+            <div id="boxhead" class="hidden">
+                <img src="Head2.png"width="100px" height="100px">
+            </div>
+            
+            <div id="boxbody" class="hidden">
+                <img src="Body2.png" width="5px" height="200px">
+            </div>
+
+            <div id="boxarm1" class="hidden">
+                <img src="Arm2_1.png" width="40px" height="150px">
+            </div>
+
+            <div id="boxarm2"  class="hidden">
+                <img src="Arm2_2.png" width="40px" height="150px">
+            </div>
+            
+            <div id="boxleg1"  class="hidden">
+                <img src="Leg2_1.png" width="40px" height="150px">
+            </div>
+
+            <div id="boxleg2"  class="hidden">
+                <img src="Leg2_2.png" width="40px" height="150px">
+            </div>
+            
+            <div id="letter1">
+                <img src="letterline.png" width="25px">
+            </div>
+
+            <div id="letter2">
+                <img src="letterline.png" width="25px">
+            </div>
+
+            <div id="letter3">
+                <img src="letterline.png" width="25px">
+            </div>
+
+            <div id="letter4">
+                <img src="letterline.png" width="25px">
+            </div>
+
+            <div id="letter5">
+                <img src="letterline.png" width="25px">
+            </div>
+
+            <div id="alphabet">
+                <button onclick="clickA()">A</button>
+                <button onclick="clickB()">B</button>
+                <button onclick="clickC()">C</button>
+                <button onclick="clickD()">D</button>
+                <button onclick="clickE()">E</button>
+                <button onclick="clickF()">F</button>
+                <button onclick="clickG()">G</button>
+                <button onclick="clickH()">H</button>
+                <button onclick="clickI()">I</button>
+                <button onclick="clickJ()">J</button>
+                <button onclick="clickK()">K</button>
+                <button onclick="clickL()">L</button>
+                <button onclick="clickM()">M</button>
+                <button onclick="clickN()">N</button>
+                <button onclick="clickO()">O</button>
+                <button onclick="clickP()">P</button>
+                <button onclick="clickQ()">Q</button>
+                <button onclick="clickR()">R</button>
+                <button onclick="clickS()">S</button>
+                <button onclick="clickT()">T</button>
+                <button onclick="clickU()">U</button>
+                <button onclick="clickV()">V</button>
+                <button onclick="clickW()">W</button>
+                <button onclick="clickX()">X</button>
+                <button onclick="clickY()">Y</button>
+                <button onclick="clickZ()">Z</button>
+            </div>
+            
+
+
+            
+        </body>
+        
+        </html>
